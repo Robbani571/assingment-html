@@ -12,10 +12,10 @@
 </head>
 <body>
     <header>
-        <h1>Hello world</h1>
+        
     </header>
     <main>
-        <section class="container">
+        <section class="container mt-5">
             <div class="row">
                 <div class="col-6">
                     <img class="img-fluid" src="images/mac.png" alt="">
@@ -27,34 +27,40 @@
                     </div>
                     <div class="costomiz-buttons mb-5">
                         <h4>Memory</h4>
-                        <button id="memory-primary">8GB unified memory</button>
-                        <button id="memory-advance">16GB unified memory</button>
+                        <button class="button-hover" id="memory-primary">8GB unified memory</button>
+                        <button class="button-hover" id="memory-advance">16GB unified memory</button>
                     </div>
                     <div class="costomiz-buttons mb-5">
                         <h4>Storage</h4>
-                        <button id="storage-primary">256GB SSD Storage</button>
-                        <button id="storage-advance1">512GB SSD Storage</button>
-                        <button id="storage-advance2">1TB SSD Storage</button>
+                        <button class="button-hover" id="storage-primary">256GB SSD Storage</button>
+                        <button class="button-hover" id="storage-advance1">512GB SSD Storage</button>
+                        <button class="button-hover" id="storage-advance2">1TB SSD Storage</button>
                     </div>
                     <div class="costomiz-buttons mb-5">
                         <h4>Choose your delivery option</h4>
-                        <button id="delivery-primary">Friday Aug 25 FREE prime delivery</button>
-                        <button id="delivery-advance">Friday Aug 21 delivery charge $20</button>
+                        <button class="button-hover" id="delivery-primary">Friday Aug 25 FREE prime delivery</button>
+                        <button class="button-hover" id="delivery-advance">Friday Aug 21 delivery charge $20</button>
                     </div>
                     <div class="product-total mb-5">
                         <div class="row">
                             <div class="col-6">
                                 <h5>Best price</h5>
-                                <h5>Extra memory cost</h5>
-                                <h5>Extra storage cost</h5>
-                                <h5>Delivery charge</h5>
                                 <hr>
+                                <h5>Extra memory cost</h5>
+                                <hr>
+                                <h5>Extra storage cost</h5>
+                                <hr>
+                                <h5>Delivery charge</h5>
+                                <hr id="style-hr">
                                 <h5>Total</h5>
                             </div>
                             <div class="col-6">
                                 <h5>$<span id="best-cost">1299</span></h5>
+                                <br>
                                 <h5>$<span id="memory-cost">0</span></h5>
+                                <br>
                                 <h5>$<span id="storage-cost">0</span></h5>
+                                <br>
                                 <h5>$<span id="delivery-cost">0</span></h5>
                                 <br>
                                 <h5>$<span id="first-total">1299</span></h5>
@@ -67,6 +73,7 @@
                         <button id="discount-button" class="apply-btn">Apply</button>
                     </div>
                 </div>
+                <hr>
                 <div class="total-price text-center">
                     <h1>Total:$<span id="last-total">1299</span></h1>
                 </div>

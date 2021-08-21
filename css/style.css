@@ -1,15 +1,23 @@
+.button-hover {
+  border-radius: 5px;
+}
+.button-hover:hover {
+  background-color: black;
+  color: white;
+}
+hr {
+  width: 130%;
+  border: 1px solid black;
+}
+#style-hr {
+  width: 130%;
+  border: 1px solid black;
+  opacity: 80;
+}
 .apply-btn {
   border: 0;
   background-color: rgb(255, 115, 0);
   padding: 5px 20px;
   border-radius: 5px;
   color: white;
-}
-button {
-  text-decoration: none;
-}
-hr {
-  width: 130%;
-  border: 2px solid rgb(36, 35, 35);
-  margin-bottom: 27px;
 }
