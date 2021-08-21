@@ -1,21 +1,22 @@
 function updateProductAmount (product, price,) {
     const primaryCost = document.getElementById(product + '-cost');
-    primaryCost.innerText = price;   
+    primaryCost.innerText = price;
+
+    //update total
+    updateTotal();
+}
+function updateTotal () {
+    const bestyCost = document.getElementById('best-cost').innerText;
+    const memoryCost = document.getElementById('memory-cost').innerText;
+    const storageCost = document.getElementById('storage-cost').innerText;
+    const deliveryCost = document.getElementById('delivery-cost').innerText;
+
+    //update total
+    const totalCost = parseInt(bestyCost) + parseInt(memoryCost) + parseInt(storageCost) + parseInt(deliveryCost);
+    const getTotal = document.getElementById('total-cost');
+    getTotal.innerText = totalCost;
 }
 
-function getInputValue (product) {
-    const productInput = document.getElementById(product + 'cost');
-    const productCost = parseInt(productInput.value);
-    return productCost;
-}
-
-function updateProductTotal () {
-    const memoryTotal = getInputValue('memory');
-    const storageTotal = getInputValue('storage');
-    const deliveryTotal = getInputValue('delivery');
-    const countTotal = memoryTotal + storageTotal + deliveryTotal;
-    document.getElementById('total-cost').innerText = countTotal;
-}
 
 //update primary cost of memory
 document.getElementById('memory-primary').addEventListener('click', function () {
